@@ -5,9 +5,6 @@
 ## Default editor
 export EDITOR=vim
 
-## grep color
-export GREP_OPTIONS='--color=auto'
-
 ## Aliases
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
@@ -40,9 +37,6 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 
 ## Get system memory, cpu usage, and gpu memory info quickly
-
-## pass options to free
-alias meminfo='free -m -l -t'
  
 ## get top process eating memory
 alias psmem='ps auxf | sort -nr -k 4'
@@ -56,4 +50,4 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias cpuinfo='lscpu'
  
 ## get GPU ram on desktop / laptop
-alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
+alias gpumeminfo='grep -i /var/log/Xorg.0.log'
